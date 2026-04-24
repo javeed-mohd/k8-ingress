@@ -56,7 +56,7 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: 'arn:aws:acm:us-east-1:160885265516:certificate/b6983d9a-848d-4898-8335-81c74db10bc3'
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/tags: Environment=dev,Project=roboshop
-    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/target-type: ip             # Pods directly attach to target group
     alb.ingress.kubernetes.io/group.name: roboshop
 spec:
   ingressClassName: alb
